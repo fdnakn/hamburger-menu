@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+li{
+    list-style: none;
+}
+body{
+    height: 100vh;
+}
+button{
+    background-color: tomato;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+button.active{
+    transform: translateX(-100px);
+}
+nav{
+    background-color: tomato;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: .4s ease;
+}
+nav.active{
+    transform: translateX(0);
+}
